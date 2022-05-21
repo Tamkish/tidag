@@ -3,12 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using XNode;
 
 public class NodeReader : MonoBehaviour
 {
     //private Coroutine _reader;
     private DialogueGraph _graph;
-    private BaseNode _current;
+    private Node _current;
 
     public void StartDialogue(DialogueGraph graph)
     {
@@ -17,14 +18,14 @@ public class NodeReader : MonoBehaviour
 
         _graph = graph;
         var start = _graph.Start;
-        _current = start.Ports.First().Connection.node as BaseNode;
+        _current = start.Ports.First().Connection.node;
     }
 
     public void Continue()
     {
-        if (_current is IHasSingleExit exit)
+        if (_current is IHasNextNode exit)
         {
-            _current = exit.ExitPort.Connection.node as BaseNode;
+            _current = exit.NextNode;
         }
     }
 

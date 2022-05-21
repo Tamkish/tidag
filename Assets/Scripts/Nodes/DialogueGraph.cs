@@ -10,4 +10,5 @@ public class DialogueGraph : NodeGraph
 {
     public StartNode Start => nodes.Find(node => node is StartNode) as StartNode;
     
+     
 }
