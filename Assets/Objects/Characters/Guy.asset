@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c49b40ac9f4c0a9a1f543810725a86, type: 3}
+  m_Name: Guy
+  m_EditorClassIdentifier: 
+  characterName: '|Mr. Guy'
+  dialogues:
+  - {fileID: 11400000, guid: ed4df2b94b06db8449d563f9c3ac6924, type: 2}

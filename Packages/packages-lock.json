@@ -1,14 +1,5 @@
 {
   "dependencies": {
-    "com.arimger.editor-toolbox": {
-      "version": "https://github.com/arimger/Unity-Editor-Toolbox.git#upm",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.editorcoroutines": "1.0.0"
-      },
-      "hash": "b08bdea2cbc967d0a26acbe6087bd6273c193dd0"
-    },
     "com.unity.2d.animation": {
       "version": "7.0.4",
       "depth": 1,
@@ -110,13 +101,6 @@
       "dependencies": {
         "com.unity.services.core": "1.0.1"
       },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.editorcoroutines": {
-      "version": "1.0.0",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.ext.nunit": {
